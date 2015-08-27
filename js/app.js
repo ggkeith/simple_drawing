@@ -4,7 +4,7 @@
 var color = $(".selected").css("background-color");
 
 //when clicking on control list items
-$(".controls li").click(function() {
+$(".controls").on("click", "li", function() {
 	//deselect sibling elements
 	$(this).siblings().removeClass("selected");
 	//select clicked element
